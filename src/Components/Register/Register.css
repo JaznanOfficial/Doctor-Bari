@@ -1,4 +1,4 @@
-.login {
+.register {
     margin-top: 110px;
     background: #007bff;
     background: linear-gradient(to right, #0062e6, #33aeff);
@@ -9,10 +9,4 @@
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
 }
-
-.btn-google {
-    color: white !important;
-    background-color: #ea4335 !important;
-}
-
 
