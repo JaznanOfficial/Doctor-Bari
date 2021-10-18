@@ -2,7 +2,7 @@
     {
        "id":"1",
        "img":"https://physiciandirectory.brighamandwomens.org/Custom/Photos/hires/14646.jpg",
-       "name":"Pracha Eamranond, MD, MPH",
+       "name":"Pracha Eamranond, MD",
        "fee":"420$",
        "specialist":"Internal Medicine",
        "experiences":"Digital Health,Medical Education,Population Health",
@@ -46,15 +46,6 @@
     },
     {
       "id":"6",
-       "img":"https://deptmedicine.arizona.edu/sites/default/files/styles/1x_smartphone/public/alpert_joseph-md_labcoat.772-no-logo_0.jpg?itok=TGhsbCy9&timestamp=1620470121",
-       "name":"Joseph Alpert, MD",
-       "fee":"450$",
-       "specialist":"Cardiology",
-       "experiences":"American Board of Internal Medicine Subspecialty of Cardiovascular Disease",
-       "details":"Joseph S. Alpert, MD, is Professor of Medicine in the Department of Medicine and Medical Director of cardiac rehabilitation at the University of Arizona College of Medicine at Tucson. Dr. Alpert is board certified in internal medicine and cardiovascular disease. Dr. Alpert is Doctorpedias Chief Clinical Information Officer and the Editor-in-Chief of the American Journal of Medicine."
-    },
-    {
-      "id":"7",
        "img":"https://www.myganv.com/sites/default/files/styles/provider/public/Khapra_Asma_labcoat_Retakes.jpg?itok=r8rdWQUc",
        "name":"Asma Khapra, MD",
        "fee":"150$",
@@ -63,11 +54,20 @@
        "details":"Dr. Asma Khapra is a Board Certified Gastroenterologist and a Partner at GastroHealth, Virginia Division. She has been recognized as a Top Doctor by the Washingtonian Magazine, Northern Virginia Magazine, Arlington Magazine, and Castle Connolly."
     },
     {
+      "id":"7",
+       "img":"https://deptmedicine.arizona.edu/sites/default/files/styles/1x_smartphone/public/alpert_joseph-md_labcoat.772-no-logo_0.jpg?itok=TGhsbCy9&timestamp=1620470121",
+       "name":"Joseph Alpert, MD",
+       "fee":"450$",
+       "specialist":"Cardiology",
+       "experiences":"American Board of Internal Medicine Subspecialty of Cardiovascular Disease",
+       "details":"Joseph S. Alpert, MD, is Professor of Medicine in the Department of Medicine and Medical Director of cardiac rehabilitation at the University of Arizona College of Medicine at Tucson. Dr. Alpert is board certified in internal medicine and cardiovascular disease. Dr. Alpert is Doctorpedias Chief Clinical Information Officer and the Editor-in-Chief of the American Journal of Medicine."
+    },
+    {
       "id":"8",
        "img":"https://i1.rgstatic.net/ii/profile.image/272513653538823-1441983726357_Q512/Guillaume-Dumont-3.jpg",
        "name":"Guillaume Dumont, MD",
        "fee":"500$",
-       "specialist":"Orthopedic Surgery,Orthopedic Sports Medicine",
+       "specialist":"Orthopedic Surgery",
        "experiences":"Orthopedic Surgery,Orthopedic Sports Medicine",
        "details":"Dr. Guillaume Dumont is an orthopaedic surgeon and sports medicine specialist at the University of South Carolina (Prisma Health). He specializes in the treatment of hip and shoulder conditions, using minimally invasive arthroscopic techniques to improve pain and function."
     },
