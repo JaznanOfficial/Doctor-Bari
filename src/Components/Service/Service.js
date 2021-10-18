@@ -15,11 +15,11 @@ const Service = (props) => {
                         <Card.Body>
                             <Card.Title>
                                 {" "}
-                                <h4 className='text-danger'>{name}</h4>{" "}
+                                <h4 className='text-dark'>{name}</h4>{" "}
                             </Card.Title>
                             <Card.Text>
                                 <h6 className='text-secondary'>{specialist}</h6>
-                                <h5 className='text-primary'>Fees:{fee}</h5>
+                                <h5 className='text-danger'>Fees:{fee}</h5>
                                 <Button variant="outline-dark" size="sm">See Details for Appoinment</Button>
                                 
                             </Card.Text>

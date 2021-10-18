@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "./doctor-bari.jpg";
 import './Navigation.css';
 
@@ -12,10 +13,10 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto nav-bar-custom">
-              <Nav.Link href="#home" className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Home</Nav.Link>
-              <Nav.Link href="#link" className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Aboute Us</Nav.Link>
-              <Nav.Link href="#link" className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Private Doctor</Nav.Link>
-              <Nav.Link href="#link" className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Nav.Link>
+              <Link to='/home' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Home</Link>
+              <Link to='/about' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Aboute Us</Link>
+              <Link to='./private-doctor' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Private Doctor</Link>
+              <Link to='./log-in' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Link>
               
             </Nav>
           </Navbar.Collapse>
