@@ -1,3 +1,11 @@
 .nav-link-text:hover{
-color: navy !important;
+color: lightgray !important;
+border:1px solid white !;
+}
+
+.nav-bar-custom a:hover{
+border-top: 1px solid white;
+}
+.nav-bar-custom a:focus{
+border-top: 1px solid white;
 }
