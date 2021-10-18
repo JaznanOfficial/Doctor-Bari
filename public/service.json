@@ -52,32 +52,5 @@
        "specialist":"Cardiology",
        "experiences":"American Board of Internal Medicine Subspecialty of Cardiovascular Disease",
        "details":"Joseph S. Alpert, MD, is Professor of Medicine in the Department of Medicine and Medical Director of cardiac rehabilitation at the University of Arizona College of Medicine at Tucson. Dr. Alpert is board certified in internal medicine and cardiovascular disease. Dr. Alpert is Doctorpedias Chief Clinical Information Officer and the Editor-in-Chief of the American Journal of Medicine."
-    },
-    {
-      "id":"7",
-       "img":"https://www.myganv.com/sites/default/files/styles/provider/public/Khapra_Asma_labcoat_Retakes.jpg?itok=r8rdWQUc",
-       "name":"Asma Khapra, MD",
-       "fee":"150$",
-       "specialist":"Gastroenterology",
-       "experiences":"Gastroenterology",
-       "details":"Dr. Asma Khapra is a Board Certified Gastroenterologist and a Partner at GastroHealth, Virginia Division. She has been recognized as a Top Doctor by the Washingtonian Magazine, Northern Virginia Magazine, Arlington Magazine, and Castle Connolly."
-    },
-    {
-      "id":"8",
-       "img":"https://i1.rgstatic.net/ii/profile.image/272513653538823-1441983726357_Q512/Guillaume-Dumont-3.jpg",
-       "name":"Guillaume Dumont, MD",
-       "fee":"500$",
-       "specialist":"Orthopedic Surgery,Orthopedic Sports Medicine",
-       "experiences":"Orthopedic Surgery,Orthopedic Sports Medicine",
-       "details":"Dr. Guillaume Dumont is an orthopaedic surgeon and sports medicine specialist at the University of South Carolina (Prisma Health). He specializes in the treatment of hip and shoulder conditions, using minimally invasive arthroscopic techniques to improve pain and function."
-    },
-    {
-      "id":"9",
-       "img":"https://www.downstate.edu/uhb/_images/leadership/nakeshbandi.png",
-       "name":"Mohamed Nakeshbandi, MD",
-       "fee":"120$",
-       "specialist":"Infectious Disease",
-       "experiences":"Infectious Disease",
-       "details":"Dr. Mohamed Nakeshbandi, MD is an infectious disease specialist in Brooklyn, New York. He is currently licensed to practice medicine in New York and Kentucky. He is affiliated with SUNY Downstate-University Hospital of Brooklyn."
     }
  ]
