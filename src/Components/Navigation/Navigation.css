@@ -1,3 +1,11 @@
+.nav-toggle{
+    border: 2px solid white !important;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url('https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png') !important;
+}
+
 .nav-link-text{
 color: white !important;
 text-decoration: none;

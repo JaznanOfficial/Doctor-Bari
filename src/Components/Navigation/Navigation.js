@@ -10,7 +10,7 @@ const Navigation = () => {
         <Navbar bg="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand href="#home"><img src={logo} alt="img not found" width='150px' /></Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className='text-light nav-toggle' />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto nav-bar-custom">
               <Link to='/home' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Home</Link>
