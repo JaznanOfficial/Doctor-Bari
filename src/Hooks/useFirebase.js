@@ -5,8 +5,10 @@ import initializeConfig from '../Firebase/Firebase.init';
 initializeConfig()
 const useFirebase = () => {
     const [user, setUser] = useState({})
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
-    const [password,setPassword] = useState('')
+    const [password, setPassword] = useState('')
+    const [error, setError] = useState('')
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
@@ -17,15 +19,18 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
             console.log(result.user);
+            })
+            .catch(error => {
+                setError(error.message);
         })
     }
 
+    
+    
 
-    const handleRegistration = e => {
-        e.preventDefault()
-        console.log(email,password);
-}
+    
 
+    
     const handleEmail = e => {
         e.preventDefault();
         setEmail(e.target.value);
@@ -35,7 +40,14 @@ const useFirebase = () => {
     setPassword(e.target.value);
 }
 
-
+const handleRegistration = e => {
+    e.preventDefault()
+    console.log(email,password);
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+   console.log(userCredential.user);
+  })
+}
 
 
 
@@ -67,8 +79,7 @@ const useFirebase = () => {
         handleRegistration,
         handleEmail,
         handlePassword,
-        email,
-        password,
+        error,
     };
 };
 
