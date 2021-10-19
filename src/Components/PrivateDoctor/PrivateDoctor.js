@@ -25,7 +25,7 @@ const PrivateDoctor = () => {
                   </div>
                   <div className="form-floating mb-3">
                     <input type="text" className="form-control" id="floatingPassword" placeholder="Enter Your Doctor's Name"/>
-                    <label for="floatingPassword">Your doctor's name(if you have choice)</label>
+                    <label for="floatingPassword">Doctor's name(if you have choice)</label>
                   </div>
                   <div className="d-grid mb-2">
                     <button className="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Submit & Get Appoinment</button>

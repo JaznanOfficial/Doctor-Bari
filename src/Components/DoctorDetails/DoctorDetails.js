@@ -1,27 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import './DoctorDetails.css'
 
 const DoctorDetails = () => {
     const params = useParams();
     const { doctorId } = params;
-    const { doctor, setDoctor} = useState([])
+    const [ doctor, setDoctor] = useState([])
     useEffect(() => {
         fetch(`/services.json`)
             .then(res => res.json())
-            .then(data => console.log(data[`${doctorId}`-1]));
-    },[])
+            .then(data => setDoctor(data[`${doctorId}`-1]));
+    }, [])
+    const { name, img, details, specialist,fee } = doctor;
     return (
-        <div className='doctor-details'>
-        <Card>
-        
+        <div className='doctor-details w-100 mx-auto mb-5'>
+        <Card style={{ width: '18rem' }} className='mx-auto'>
+        <Card.Img variant="top" src={img} width='200px' height='' className='mx-auto'/>
         <Card.Body>
-                    <Card.Title></Card.Title>
+                    <Card.Title> <h3 className='text-danger'>{name}</h3> </Card.Title>
+                    <h5 className='text-success'>{specialist}</h5>
+                    
           <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
-          </Card.Text>
+            {details}
+                    </Card.Text>
+                    <h3 className='text-danger'>{fee}</h3>
+                    <Link to ='/private-doctor'><Button variant="outline-danger">Get Appoinment</Button></Link>
         </Card.Body>
       </Card>
         </div>
