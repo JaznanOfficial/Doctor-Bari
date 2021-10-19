@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useFirebase from "../../Hooks/useFirebase";
 import logo from "./doctor-bari.jpg";
 import './Navigation.css';
 
 const Navigation = () => {
+  const { user,logOut } = useFirebase();
     return (
         <div>
         <Navbar bg="dark" expand="lg" fixed="top">
@@ -16,7 +18,11 @@ const Navigation = () => {
               <Link to='/home' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Home</Link>
               <Link to='/about' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Aboute Us</Link>
               <Link to='./private-doctor' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Private Doctor</Link>
-              <Link to='./login' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Link>
+                {
+                  user.email ?
+                   <button onClick={logOut}>Log Out</button> 
+                    : <Link Link to='./login' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Link>
+                }
               
             </Nav>
           </Navbar.Collapse>

@@ -11,7 +11,7 @@ const Service = (props) => {
             <Col>
                 <Card className="d-flex flex-sm-column flex-lg-row rounded-3 shadow justify-content-center align-items-center">
                     <div className='img-div'>
-                        <Card.Img variant="left" src={img} width='150px' height='175px' className='rounded m-1' />
+                        <Card.Img variant="left" src={img} width='150px' height='210px' className='rounded m-1' />
                     </div>
                     <div className='w-75 d-grid justify-content-center align-items-center'>
                         <Card.Body>
