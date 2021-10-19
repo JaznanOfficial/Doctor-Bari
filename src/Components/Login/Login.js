@@ -25,7 +25,7 @@ const Login = () => {
             <div className="card border-0 shadow rounded-3 my-5">
               <div className="card-body p-4 p-sm-5">
                 <h5 className="card-title text-center mb-5 fw-bolder fs-50px text-primary">Sign In</h5>
-                <form onSubmit={{signInUsingGoogle}}>
+                <form onSubmit={signInUsingGoogle}>
                   <div className="form-floating mb-3">
                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
                     <label htmlFor="floatingInput">Email address</label>
