@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation,useHistory } from "react-router-dom";
 import InitializeConfig from "../../Firebase/Firebase.init";
 import useAuth from "../../Hooks/useAuth";
 
@@ -14,9 +14,16 @@ const Login = () => {
   
   const { signInUsingGoogle, handlePasswordSignIn, handleEmail, handlePassword } = useAuth();
 
+  const location = useLocation()
+  const history = useHistory();
+  const redirect_uri = location.state?.from || '/home';
 
-
-
+  const handleGoogleLogIn = () => {
+    signInUsingGoogle()
+    .then(result => {
+      history.push(redirect_uri);
+      })
+}
 
     return (
         <div className="login">
@@ -41,7 +48,7 @@ const Login = () => {
                   </div>
                   </form>
                   <div className="d-grid mb-2">
-                    <button onClick={signInUsingGoogle} className="btn btn-google btn-login text-uppercase fw-bold btn-google" type="submit">
+                    <button onClick={handleGoogleLogIn} className="btn btn-google btn-login text-uppercase fw-bold btn-google" type="submit">
                       <i className="fab fa-google me-2"></i> Sign in with Google
                     </button>
                     </div>
