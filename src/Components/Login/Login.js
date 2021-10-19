@@ -11,7 +11,7 @@ import "./Login.css";
 
 const Login = () => {
   
-  const {signInUsingGoogle,handlePasswordSignIn} = useFirebase();
+  const {signInUsingGoogle,handlePasswordSignIn,handleEmail,handlePassword} = useFirebase();
 
 
 
@@ -27,11 +27,11 @@ const Login = () => {
                 <h5 className="card-title text-center mb-5 fw-bolder fs-50px text-primary">Sign In</h5>
                 <form>
                   <div className="form-floating mb-3">
-                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
+                    <input onBlur={handleEmail} type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
                     <label htmlFor="floatingInput">Email address</label>
                   </div>
                   <div className="form-floating mb-3">
-                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
+                    <input onBlur={handlePassword}  type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
                     <label htmlFor="floatingPassword">Password</label>
                   </div>
                   <div className="d-grid mb-2">

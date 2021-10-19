@@ -49,12 +49,10 @@ const handleRegistration = e => {
   })
 }
 
-    const handlePasswordSignIn = () => {
+    const handlePasswordSignIn = (email,password) => {
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-
-          setUser(userCredential.user);
-
+            setUser(userCredential);
         })
 }
 
