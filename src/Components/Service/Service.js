@@ -1,13 +1,15 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import DoctorDetails from "../DoctorDetails/DoctorDetails";
 
 const Service = (props) => {
-    const { name, img, fee, details, specialist, experiences } = props.service;
-    console.log(props);
+    const { name, img, fee, details, specialist, experiences, id } = props.service;
+    
     return (
         <div>
             <Col>
-                <Card className="d-flex flex-sm-column flex-lg-row rounded-3 shadow">
+                <Card className="d-flex flex-sm-column flex-lg-row rounded-3 shadow justify-content-center align-items-center">
                     <div className='img-div'>
                         <Card.Img variant="left" src={img} width='150px' height='175px' className='rounded m-1' />
                     </div>
@@ -17,12 +19,14 @@ const Service = (props) => {
                                 {" "}
                                 <h4 className='text-dark'>{name}</h4>{" "}
                             </Card.Title>
-                            <Card.Text>
+                            <Card.Body>
                                 <h6 className='text-secondary'>{specialist}</h6>
                                 <h5 className='text-danger'>Fees:{fee}</h5>
-                                <Button variant="outline-dark" size="sm">See Details for Appoinment</Button>
+                                <Link to={`/service/${id}`}>
+                                <Button variant="outline-dark" size="sm">Details for Appoinment</Button>
+                                </Link>
                                 
-                            </Card.Text>
+                            </Card.Body>
                         </Card.Body>
                     </div>
                 </Card>

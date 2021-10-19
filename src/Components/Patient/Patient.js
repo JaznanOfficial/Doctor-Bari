@@ -21,7 +21,7 @@ const Patient = () => {
     </Col>
     <Col>
       <Card className='shadow rounded-circle'>
-        <Card.Img variant="top" src="https://lh3.googleusercontent.com/proxy/6U_oBLFv_4np3IwOKm0kl4EyKHWuXWQq5c85nXqFFhgMxGpp2C7LczOY4P2wP5urplECYG7JNS0EctG9CRetNNzaoq8WkE_nCnIfkT_NlUkrwIdcd-uNRIZt_QBPv39ysg" className='rounded-circle shadow' width='200px' height='200px'/>
+        <Card.Img variant="top" src="https://images.news18.com/ibnlive/uploads/2021/05/1620187236_covid-recovery.jpg" className='rounded-circle shadow' width='200px' height='200px'/>
         
       </Card>
     </Col>

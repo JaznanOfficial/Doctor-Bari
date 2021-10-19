@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
+import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import Error from './Components/Error/Error';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
@@ -18,11 +19,12 @@ function App() {
         <Navigation></Navigation>
         <Switch>
         <Route exact path='/'><Home></Home></Route>
-        <Route path='/home'><Home></Home></Route>
-          <Route path='/about'><About></About></Route>
-          <Route path='/private-doctor'><PrivateDoctor></PrivateDoctor></Route>
-        <Route path='/login'><Login></Login></Route>
-        <Route path='/register'><Register></Register></Route>
+        <Route exact path='/home'><Home></Home></Route>
+        <Route exact path='/service/:doctorId'><DoctorDetails></DoctorDetails></Route>
+        <Route exact path='/about'><About></About></Route>
+        <Route exact path='/private-doctor'><PrivateDoctor></PrivateDoctor></Route>
+        <Route exact path='/login'><Login></Login></Route>
+        <Route exact path='/register'><Register></Register></Route>
         <Route path='*'><Error></Error></Route>
         </Switch>
       </Router>
