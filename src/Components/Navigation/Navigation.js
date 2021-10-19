@@ -20,8 +20,8 @@ const Navigation = () => {
               <Link to='./private-doctor' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Private Doctor</Link>
                 {
                   user.email ?
-                   <div> &nbsp; &nbsp; &nbsp;<h4 className='text-light d-lg-inline-block'><i class="far fa-user text-light"></i> {user.displayName} <button onClick={logOut} type="button" class="btn btn-outline-light">Log Out</button></h4></div>
-                    : <Link Link to='./login' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Link>
+                   <div> &nbsp; &nbsp; &nbsp;<h4 className='text-light d-lg-inline-block'><i className="far fa-user text-light"></i> {user.displayName} <button onClick={logOut} type="button" className="btn btn-outline-light">Log Out</button></h4></div>
+                    : <Link to='./login' className='fw-bolder fs-4 mx-3 px-0 text-light nav-link-text'>Log In</Link>
                 }
               
             </Nav>

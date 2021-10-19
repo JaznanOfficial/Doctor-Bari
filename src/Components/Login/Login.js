@@ -11,7 +11,7 @@ import "./Login.css";
 
 const Login = () => {
   
-  const {user,signInUsingGoogle} = useFirebase();
+  const {signInUsingGoogle,handleRegistration,handleEmail,handlePassword} = useFirebase();
 
 
 
@@ -25,13 +25,13 @@ const Login = () => {
             <div className="card border-0 shadow rounded-3 my-5">
               <div className="card-body p-4 p-sm-5">
                 <h5 className="card-title text-center mb-5 fw-bolder fs-50px text-primary">Sign In</h5>
-                <form onSubmit={signInUsingGoogle}>
+                <form onSubmit={handleRegistration}>
                   <div className="form-floating mb-3">
-                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
+                    <input onBlur={handleEmail} type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
                     <label htmlFor="floatingInput">Email address</label>
                   </div>
                   <div className="form-floating mb-3">
-                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
+                    <input onBlur={handlePassword} type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
                     <label htmlFor="floatingPassword">Password</label>
                   </div>
                   <div className="d-grid mb-2">
@@ -40,7 +40,7 @@ const Login = () => {
                   </div>
                   
                   <div className="d-grid mb-2">
-                    <button className="btn btn-google btn-login text-uppercase fw-bold btn-google" type="submit">
+                    <button onClick={signInUsingGoogle} className="btn btn-google btn-login text-uppercase fw-bold btn-google" type="submit">
                       <i className="fab fa-google me-2"></i> Sign in with Google
                     </button>
                     </div>
