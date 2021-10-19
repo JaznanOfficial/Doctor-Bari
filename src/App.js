@@ -9,12 +9,14 @@ import Login from './Components/Login/Login';
 import Navigation from './Components/Navigation/Navigation';
 import PrivateDoctor from './Components/PrivateDoctor/PrivateDoctor';
 import Register from './Components/Register/Register';
+import AuthProvider from './Context/AuthProvider';
 
 
 function App() {
   return (
     
     <div className="App">
+      <AuthProvider>
       <Router>
         <Navigation></Navigation>
         <Switch>
@@ -28,6 +30,7 @@ function App() {
         <Route path='*'><Error></Error></Route>
         </Switch>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

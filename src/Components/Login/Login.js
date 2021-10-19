@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import InitializeConfig from "../../Firebase/Firebase.init";
-import useFirebase from "../../Hooks/useFirebase";
+import useAuth from "../../Hooks/useAuth";
+
 import "./Login.css";
 
 
@@ -11,7 +12,7 @@ import "./Login.css";
 
 const Login = () => {
   
-  const {signInUsingGoogle,handlePasswordSignIn,handleEmail,handlePassword} = useFirebase();
+  const { signInUsingGoogle, handlePasswordSignIn, handleEmail, handlePassword } = useAuth();
 
 
 

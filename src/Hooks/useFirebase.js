@@ -5,7 +5,6 @@ import initializeConfig from '../Firebase/Firebase.init';
 initializeConfig()
 const useFirebase = () => {
     const [user, setUser] = useState({})
-    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
