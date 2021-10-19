@@ -8,6 +8,7 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Navigation from './Components/Navigation/Navigation';
 import PrivateDoctor from './Components/PrivateDoctor/PrivateDoctor';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Register from './Components/Register/Register';
 import AuthProvider from './Context/AuthProvider';
 
@@ -22,9 +23,9 @@ function App() {
         <Switch>
         <Route exact path='/'><Home></Home></Route>
         <Route exact path='/home'><Home></Home></Route>
-        <Route exact path='/service/:doctorId'><DoctorDetails></DoctorDetails></Route>
+        <PrivateRoute exact path='/service/:doctorId'><DoctorDetails></DoctorDetails></PrivateRoute>
         <Route exact path='/about'><About></About></Route>
-        <Route exact path='/private-doctor'><PrivateDoctor></PrivateDoctor></Route>
+        <PrivateRoute exact path='/private-doctor'><PrivateDoctor></PrivateDoctor></PrivateRoute>
         <Route exact path='/login'><Login></Login></Route>
         <Route exact path='/register'><Register></Register></Route>
         <Route path='*'><Error></Error></Route>
