@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut,createUserWithEmailAndPassword   } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged,signOut,createUserWithEmailAndPassword,signInWithEmailAndPassword    } from "firebase/auth";
 import initializeConfig from '../Firebase/Firebase.init';
 
 initializeConfig()
@@ -45,11 +45,18 @@ const handleRegistration = e => {
     console.log(email,password);
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-   console.log(userCredential.user);
+   setUser(userCredential.user);
   })
 }
 
+    const handlePasswordSignIn = () => {
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
 
+          setUser(userCredential.user);
+
+        })
+}
 
 
     const logOut = () => {
@@ -80,6 +87,7 @@ const handleRegistration = e => {
         handleEmail,
         handlePassword,
         error,
+        handlePasswordSignIn,
     };
 };
 

@@ -11,7 +11,7 @@ import "./Login.css";
 
 const Login = () => {
   
-  const {signInUsingGoogle} = useFirebase();
+  const {signInUsingGoogle,handlePasswordSignIn} = useFirebase();
 
 
 
@@ -35,7 +35,7 @@ const Login = () => {
                     <label htmlFor="floatingPassword">Password</label>
                   </div>
                   <div className="d-grid mb-2">
-                    <button className="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
+                    <button onClick={handlePasswordSignIn} className="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Sign
                       in</button>
                   </div>
                   </form>
